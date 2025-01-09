@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Raccoonify",
+  "version": "0.1.0",
+  "description": "Improves boring youtube thumbnails by putting raccoons instead",
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.youtu.be/*",
+    "https://api.racc.lol/*"
+  ],
+  "permissions": [
+    "webNavigation",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker" : "src/background.js"
+  },
+  "action": {
+    "default_title": "modifier le texte"
+  }
+}
